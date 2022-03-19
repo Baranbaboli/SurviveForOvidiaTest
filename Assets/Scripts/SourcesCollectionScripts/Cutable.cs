@@ -6,7 +6,7 @@ public class Cutable : MonoBehaviour
 {
     public GameObject log;
     private int counter = 0;
-    private int breakTimer = 6;
+    private int breakTimer = 1;
 
     [HideInInspector]
     public float instantiateTime = 5f;
@@ -35,17 +35,17 @@ public class Cutable : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Hitted " + counter + " times");               
+        //Debug.Log("Hitted " + counter + " times");               
         breakTimer = Random.Range(1, 100);                        //rastgele olan sayý her aðaç kesimi için farklý ihtimallerde kýrýlmasýna olanak tanýr.
-
-        Debug.Log("breakTimer: " + breakTimer);
+        
+        //Debug.Log("breakTimer: " + breakTimer);
 
         if (counter > 6 && breakTimer > 60)                       //1-100 arasýnda breakTimer'a sayý atanýyor. 60 > olmasý düz mantýk %40 ihtimal baþarýlý.
         {
-            Debug.Log("CUTTED");
+            //Debug.Log("CUTTED");
             transform.GetChild(1).gameObject.SetActive(false);  //bu aktife etme ve deaktife etmek için rigidbody'li objeyi yaratmak daha efektif!
             transform.GetChild(0).gameObject.SetActive(true);
-            Destroy(this.gameObject, 5.5f);
+            Destroy(this.gameObject, 5f);
             logSpawn = true;
             set = GameManager.ControlTime;
         }
@@ -57,10 +57,9 @@ public class Cutable : MonoBehaviour
         {
             for (int i = 0; i < 2; i++)
             {
-                Instantiate(log, transform.position, Quaternion.identity, transform.parent);
-                logSpawn = false;
+                Instantiate(log, transform.position, Quaternion.Euler(0,90,0), transform.parent);            
             }
-                
+            logSpawn = false;
         }
     }
 

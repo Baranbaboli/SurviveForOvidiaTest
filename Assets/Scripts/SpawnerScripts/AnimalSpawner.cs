@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnimalSpawner : MonoBehaviour
 {
     public GameObject animal;
-
+    public Transform[] spawnPoints;
 
     void Start()
     {

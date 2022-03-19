@@ -47,7 +47,7 @@ CapsuleCollider:
   m_Radius: 0.35000002
   m_Height: 10.843517
   m_Direction: 1
-  m_Center: {x: 3.42, y: 4.4600725, z: 1.56}
+  m_Center: {x: 3.42, y: 4.50073, z: 1.56}
 --- !u!114 &5504890257746293373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354830ae4f878bc449eb0a287a4ec595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  log: {fileID: 9034942983770912862, guid: f1900fb864a52944bbc98f40c610d1a1, type: 3}
+  log: {fileID: 6272906301142333442, guid: 09621a187f6368a41bd4b8ee09b032e5, type: 3}
   instantiateTime: 3.8
   set: 0
   logSpawn: 0
@@ -183,15 +183,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5711449700759176449, guid: 9f9ec0c1fc631174bafa979c9c0782df, type: 3}
       propertyPath: m_Center.y
-      value: 14.819663
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7463689467514200720, guid: 9f9ec0c1fc631174bafa979c9c0782df, type: 3}
       propertyPath: m_Name
       value: RigidbodyTree
       objectReference: {fileID: 0}
+    - target: {fileID: 7463689467514200720, guid: 9f9ec0c1fc631174bafa979c9c0782df, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418543689772707839, guid: 9f9ec0c1fc631174bafa979c9c0782df, type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8418543689772707839, guid: 9f9ec0c1fc631174bafa979c9c0782df, type: 3}
       propertyPath: m_Mass
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418543689772707839, guid: 9f9ec0c1fc631174bafa979c9c0782df, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f9ec0c1fc631174bafa979c9c0782df, type: 3}

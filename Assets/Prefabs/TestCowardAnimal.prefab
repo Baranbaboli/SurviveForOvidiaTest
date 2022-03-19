@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5546290752757678536
+--- !u!1 &8231579999441633424
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5546290752757678543}
-  - component: {fileID: 5546290752757678540}
-  - component: {fileID: 5546290752757678541}
-  - component: {fileID: 5546290752757678538}
-  - component: {fileID: 5546290752757678539}
-  - component: {fileID: 5546290752757678542}
-  - component: {fileID: 3967569291668931550}
+  - component: {fileID: 8231579999441633431}
+  - component: {fileID: 8231579999441633428}
+  - component: {fileID: 8231579999441633429}
+  - component: {fileID: 8231579999441633426}
+  - component: {fileID: 8231579999441633427}
+  - component: {fileID: 8231579999441633430}
+  - component: {fileID: 705854956051546758}
   m_Layer: 0
-  m_Name: TestAnimal
+  m_Name: TestCowardAnimal
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5546290752757678543
+--- !u!4 &8231579999441633431
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546290752757678536}
+  m_GameObject: {fileID: 8231579999441633424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 405.8715, y: 1.1651697, z: 419.54285}
+  m_LocalPosition: {x: 854.4411, y: 4, z: 731}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5546290752757678540
+--- !u!33 &8231579999441633428
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546290752757678536}
+  m_GameObject: {fileID: 8231579999441633424}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5546290752757678541
+--- !u!23 &8231579999441633429
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546290752757678536}
+  m_GameObject: {fileID: 8231579999441633424}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -85,13 +85,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5546290752757678538
+--- !u!136 &8231579999441633426
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546290752757678536}
+  m_GameObject: {fileID: 8231579999441633424}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -99,13 +99,13 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!195 &5546290752757678539
+--- !u!195 &8231579999441633427
 NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546290752757678536}
+  m_GameObject: {fileID: 8231579999441633424}
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
@@ -121,29 +121,31 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &5546290752757678542
+--- !u!114 &8231579999441633430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546290752757678536}
+  m_GameObject: {fileID: 8231579999441633424}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce4cdeacc4f27a849b790e3616b7719d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cowardAnimal: 1
   player: {fileID: 0}
---- !u!65 &3967569291668931550
+  moveTime: 2
+--- !u!65 &705854956051546758
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546290752757678536}
+  m_GameObject: {fileID: 8231579999441633424}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 30, y: 2, z: 30}
+  m_Size: {x: 50, y: 5, z: 50}
   m_Center: {x: 0, y: 0, z: 0}
