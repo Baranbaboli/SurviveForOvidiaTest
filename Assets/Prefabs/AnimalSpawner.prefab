@@ -43,4 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb51c12fec0a37a449461c2b834a4ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animal: {fileID: 0}
+  animal:
+  - {fileID: 5546290752757678536, guid: 1c75e8c5fd9d12e499877decd9fd14e1, type: 3}
+  - {fileID: 8231579999441633424, guid: ebba3cbbd967ba7498c36af6c2d69201, type: 3}
+  spawnPoints:
+  - {fileID: 950468332260045892, guid: d51a9b2f90d0a02408025b6ac63b1cf9, type: 3}
+  - {fileID: 5144252003119732885, guid: 11d4f9989eaa7154185142788f84f7d4, type: 3}
+  - {fileID: 4876106787935487424, guid: 1986c29dc5d06d045a2a358f3919c953, type: 3}
+  - {fileID: 3814376804895796101, guid: f05494dc75a67b846ac829c2f00ab6bb, type: 3}
+  - {fileID: 7039537033187756404, guid: f7f8f9521f000d74aa620884e51501a1, type: 3}
+  spawnPerHour: 2

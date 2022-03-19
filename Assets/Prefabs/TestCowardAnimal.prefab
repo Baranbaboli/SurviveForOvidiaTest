@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ec3e8830ec8818e498dd86c86846e5d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cowardAnimal: 1
-  player: {fileID: 0}
+  player: {fileID: 1223993299910425497, guid: 3fa4bf7002ea93046a91c0a11f8362a6, type: 3}
   moveTime: 2
 --- !u!65 &705854956051546758
 BoxCollider:

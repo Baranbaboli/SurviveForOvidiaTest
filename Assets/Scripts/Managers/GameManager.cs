@@ -5,18 +5,40 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-
     static public float ControlTime = 0f;
 
-    // Start is called before the first frame update
+    [Header("Day&Night Time Settings")]
+    public bool fastDay = false;
+    static public float TimeOfDay = 7f; 
+    [Tooltip("LightningManager'deki deðer ile ayný olmalý.")]
+    [SerializeField, Range(0, 24)] private float TimeOfDay_gm = 0; //lightningManager ile ayný olmalý.
+
+
     void Start()
     {
         ControlTime = 0f;
+        TimeOfDay = TimeOfDay_gm;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        ControlTime += Time.deltaTime;
+        ControlTime += Time.deltaTime; //Scene baþlatýldýðýndan beri geçen zaman.
+        dayTime(); //spawner zaman kontrolü için güncellenen gün zamaný.
+    }
+
+
+    void dayTime()
+    {
+        if (fastDay)
+        {
+            TimeOfDay += Time.deltaTime / 10;
+            TimeOfDay %= 24;
+        }
+        else
+        {
+            TimeOfDay += Time.deltaTime / 100;
+            TimeOfDay %= 24;
+        }
     }
 }

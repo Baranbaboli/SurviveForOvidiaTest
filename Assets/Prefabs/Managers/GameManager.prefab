@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 261786371699518744}
   - component: {fileID: 261786371699518751}
+  - component: {fileID: 941330530}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -43,3 +44,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d802733a2311840854cf1ca40d4d70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fastDay: 1
+  TimeOfDay_gm: 7
+--- !u!114 &941330530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261786371699518750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefa0a5960f00cc4f9d6d9d229fdd175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fastDay: 1
+  DirectionalLight: {fileID: 0}
+  Preset: {fileID: 11400000, guid: bd6498ae3d06a484b812a190f08a8d0d, type: 2}
+  TimeOfDay: 7

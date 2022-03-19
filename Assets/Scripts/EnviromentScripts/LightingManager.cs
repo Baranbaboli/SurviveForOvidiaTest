@@ -28,6 +28,7 @@ public class LightingManager : MonoBehaviour
             else
             {
                 TimeOfDay += Time.deltaTime / 100;
+
             }     
             TimeOfDay %= 24; // 0-24
             UpdateLighting(TimeOfDay / 24f);   //19-6 skybox deðiþecek!

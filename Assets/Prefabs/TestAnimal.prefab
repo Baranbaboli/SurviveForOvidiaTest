@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8050d29ced9229941a71848aa71d385e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133,7 +133,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce4cdeacc4f27a849b790e3616b7719d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  cowardAnimal: 0
+  player: {fileID: 1223993299910425497, guid: 3fa4bf7002ea93046a91c0a11f8362a6, type: 3}
+  moveTime: 2
 --- !u!65 &3967569291668931550
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -145,5 +147,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 30, y: 2, z: 30}
+  m_Size: {x: 50, y: 5, z: 50}
   m_Center: {x: 0, y: 0, z: 0}
