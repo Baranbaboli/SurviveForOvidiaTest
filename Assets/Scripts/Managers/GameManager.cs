@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-
+    static public GameObject playerStatic;
     static public float ControlTime = 0f;
+
+    public GameObject player;
+
 
     [Header("Day&Night Time Settings")]
     public bool fastDay = false;
@@ -18,6 +21,7 @@ public class GameManager : MonoBehaviour
     {
         ControlTime = 0f;
         TimeOfDay = TimeOfDay_gm;
+        playerStatic = player;
     }
 
 

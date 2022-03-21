@@ -7,7 +7,11 @@ public class AnimalMovement : MonoBehaviour
 {
     public bool cowardAnimal = false;
     Vector3 randomDirection,tmp;
+
+
     public Transform player;
+
+
     [Tooltip("yapay zeka'nýn rastgele haraket etme zamaný")]
     public int moveTime = 3;
     private float timer = 0f;
@@ -21,6 +25,7 @@ public class AnimalMovement : MonoBehaviour
     private void Start()
     {
         this.GetComponent<NavMeshAgent>().SetDestination(randomDirection);
+        player = GameManager.playerStatic.transform;
     }
 
     void Update()
