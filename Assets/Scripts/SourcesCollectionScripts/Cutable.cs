@@ -70,6 +70,7 @@ public class Cutable : MonoBehaviour
                 Instantiate(log, transform.position, Quaternion.Euler(0,90,0), transform.parent);            
             }
             logSpawn = false;
+            set = GameManager.ControlTime;
         }
     }
 

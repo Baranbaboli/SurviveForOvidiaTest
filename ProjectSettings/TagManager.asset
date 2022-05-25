@@ -8,6 +8,8 @@ TagManager:
   - Axe
   - Animal
   - Drink
+  - Wolf
+  - Bed
   layers:
   - Default
   - TransparentFX
