@@ -17,7 +17,11 @@ public class PlayerMovement : MonoBehaviour
     bool isGround = false;
 
     Vector3 velocity;
-    
+
+    private void Start()
+    {
+        speed = speed + GameManager.staticPlayerLevel / 2;
+    }
 
     // Update is called once per frame
     void Update()

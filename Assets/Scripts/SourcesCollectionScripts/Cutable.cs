@@ -28,8 +28,10 @@ public class Cutable : MonoBehaviour
         if(other.tag == "Axe")
         {
             Debug.Log("Axe triggered");
+            Debug.Log(GameManager.staticPlayerLevel);
             counter++;
         }
+        
     }
 
 
@@ -43,6 +45,14 @@ public class Cutable : MonoBehaviour
         if (counter > 6 && breakTimer > 60)                       //1-100 arasýnda breakTimer'a sayý atanýyor. 60 > olmasý düz mantýk %40 ihtimal baþarýlý.
         {
             //Debug.Log("CUTTED");
+            transform.GetChild(1).gameObject.SetActive(false);  //bu aktife etme ve deaktife etmek için rigidbody'li objeyi yaratmak daha efektif!
+            transform.GetChild(0).gameObject.SetActive(true);
+            Destroy(this.gameObject, 5f);
+            logSpawn = true;
+            set = GameManager.ControlTime;
+        }
+        else if (GameManager.staticPlayerLevel == 10)
+        {
             transform.GetChild(1).gameObject.SetActive(false);  //bu aktife etme ve deaktife etmek için rigidbody'li objeyi yaratmak daha efektif!
             transform.GetChild(0).gameObject.SetActive(true);
             Destroy(this.gameObject, 5f);

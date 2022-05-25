@@ -33,7 +33,7 @@ public class AnimalSpawner : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            animalType = Random.Range(0, 2);
+            animalType = Random.Range(0, 6);
             Instantiate(animal[animalType], spawnPoints[i].position, Quaternion.identity, transform.parent);
             Instantiate(animal[animalType], spawnPoints[i].position, Quaternion.identity, transform.parent);
             if (Random.Range(0, 100) > 50)
